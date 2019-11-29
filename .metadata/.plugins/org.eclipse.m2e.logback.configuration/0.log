@@ -2290,3 +2290,27 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 2019-11-28 23:59:03,398 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cyberspace\Desktop\WAES_Project\waes-test\src\main\resources
 2019-11-28 23:59:03,401 [Worker-27: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2019-11-28 23:59:03,403 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cyberspace\Desktop\WAES_Project\waes-test\src\test\resources
+2019-11-29 00:10:58,275 [Worker-30: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-29 00:10:58,276 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cyberspace\Desktop\WAES_Project\waes-test\src\main\resources
+2019-11-29 00:10:58,278 [Worker-30: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-29 00:10:58,279 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cyberspace\Desktop\WAES_Project\waes-test\src\test\resources
+2019-11-29 00:12:48,909 [Worker-32: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-29 00:12:48,910 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cyberspace\Desktop\WAES_Project\waes-test\src\main\resources
+2019-11-29 00:12:48,912 [Worker-32: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-29 00:12:48,913 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cyberspace\Desktop\WAES_Project\waes-test\src\test\resources
+2019-11-29 00:15:13,349 [Worker-20: Launching LoginTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-29 00:15:13,351 [Worker-20: Launching LoginTest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cyberspace\Desktop\WAES_Project\waes-test\src\main\resources
+2019-11-29 00:15:13,352 [Worker-20: Launching LoginTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-29 00:15:13,354 [Worker-20: Launching LoginTest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cyberspace\Desktop\WAES_Project\waes-test\src\test\resources
+2019-11-29 00:16:04,631 [Worker-30: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-29 00:16:04,633 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cyberspace\Desktop\WAES_Project\waes-test\src\main\resources
+2019-11-29 00:16:04,635 [Worker-30: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-29 00:16:04,636 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cyberspace\Desktop\WAES_Project\waes-test\src\test\resources
+2019-11-29 00:16:53,856 [Worker-34: Launching LoginTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-29 00:16:53,857 [Worker-34: Launching LoginTest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cyberspace\Desktop\WAES_Project\waes-test\src\main\resources
+2019-11-29 00:16:53,860 [Worker-34: Launching LoginTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-29 00:16:53,862 [Worker-34: Launching LoginTest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cyberspace\Desktop\WAES_Project\waes-test\src\test\resources
+2019-11-29 00:17:17,277 [Worker-35: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-29 00:17:17,279 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cyberspace\Desktop\WAES_Project\waes-test\src\main\resources
+2019-11-29 00:17:17,281 [Worker-35: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-29 00:17:17,283 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Cyberspace\Desktop\WAES_Project\waes-test\src\test\resources

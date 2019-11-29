@@ -6,6 +6,7 @@ import generic.BaseTest;
 import pages.LoginPage;
 import pages.SignUpPage;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.Assert;
 

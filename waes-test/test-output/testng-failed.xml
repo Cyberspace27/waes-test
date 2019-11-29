@@ -1,31 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Test]">
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="tests.DetailTest">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- tests.DetailTest -->
-      <class name="tests.ProfileTest">
-        <methods>
-          <include name="ValidateProfileData"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- tests.ProfileTest -->
-      <class name="tests.SignUpTest">
-        <methods>
-          <include name="fillSingUpMissingData"/>
-          <include name="beforeClass"/>
-          <include name="fillSingUpWrongDay"/>
-          <include name="fillSingUpSuccessful"/>
-          <include name="beforeTests"/>
-          <include name="fillSingUpInvalidUserName"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- tests.SignUpTest -->
       <class name="tests.LoginTest">
         <methods>
           <include name="signInSuccess"/>
@@ -35,5 +12,5 @@
         </methods>
       </class> <!-- tests.LoginTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Test] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

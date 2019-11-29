@@ -32,7 +32,7 @@ public class LoginTest extends BaseTest {
 
 	@Test(description = "logIn with correct data", groups = { "login" })
 	public void signInSuccess() {
-		//loginPage.goToLogin();
+		loginPage.goToLogin();
 		waitTime(3000);
 		loginPage.typeUserPassword("admin", "hero");
 		loginPage.login();

@@ -6,6 +6,7 @@ import generic.BaseTest;
 import pages.LoginPage;
 import pages.SignUpPage;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.Assert;
 
@@ -35,7 +36,7 @@ public class SignUpTest extends BaseTest {
   @Test
   public void fillSingUpInvalidUserName() {
 	  signUpPage.clearSignUpData();
-	  signUpPage.enterSignUpData("","3435465&%$%*","Carmen","testWAES@com",11,"March",1988);
+	  signUpPage.enterSignUpData("superman","3435465&%$%*","Carmen","testWAES@com",11,"March",1988);
 	 scrollDown(350);
 	 waitTime(3000);
 	 signUpPage.clickSignUpBtn();

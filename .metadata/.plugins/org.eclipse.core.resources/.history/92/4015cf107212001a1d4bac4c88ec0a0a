@@ -44,10 +44,10 @@ public class SignUpTest extends BaseTest {
   }
   
   @Test(priority=3)
-  public void fillSingUpInvalidName() {
+  public void fillSingUpWrongDay() {
 	  
 	  signUpPage.clearSignUpData();
-	  signUpPage.enterSignUpData("Superman","abc123","9857","testWAES@com",10,"March",1988);
+	  signUpPage.enterSignUpData("Superman","abc123","Clark","testWAES@com",55,"March",1988);
 	 scrollDown(350);
 	 signUpPage.clickSignUpBtn();
 	 scrollUp(350);

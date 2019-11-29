@@ -21,7 +21,7 @@ public class SignUpTest extends BaseTest {
 	 	
   }
 
-  @Test(priority=1)
+  @Test
   public void fillSingUpMissingData() {
 	  signUpPage.enterSignUpData("","naruto","","testWAES@com",11,"June",1988);
 	 scrollDown(350);
@@ -32,7 +32,7 @@ public class SignUpTest extends BaseTest {
 	//add 1 more assert try to catch the message error		
   }
   
-  @Test(priority=2)
+  @Test
   public void fillSingUpInvalidUserName() {
 	  signUpPage.clearSignUpData();
 	  signUpPage.enterSignUpData("","3435465&%$%*","Carmen","testWAES@com",11,"March",1988);
@@ -43,11 +43,11 @@ public class SignUpTest extends BaseTest {
 	//add 1 more assert try to catch the message error		
   }
   
-  @Test(priority=3)
-  public void fillSingUpInvalidName() {
+  @Test
+  public void fillSingUpWrongDay() {
 	  
 	  signUpPage.clearSignUpData();
-	  signUpPage.enterSignUpData("Superman","abc123","9857","testWAES@com",10,"March",1988);
+	  signUpPage.enterSignUpData("Superman","abc123","Clark","testWAES@com",55,"March",1988);
 	 scrollDown(350);
 	 signUpPage.clickSignUpBtn();
 	 scrollUp(350);
@@ -56,7 +56,7 @@ public class SignUpTest extends BaseTest {
   }
   
   
-  @Test(priority=4)
+  @Test
   public void fillSingUpInvalidEmail() {
 	  
 	  signUpPage.clearSignUpData();
@@ -68,7 +68,7 @@ public class SignUpTest extends BaseTest {
 	//add 1 more assert try to catch the message error	
   }
   
-  @Test(priority=5)
+  @Test
   public void fillSingUpSuccessful() {
 	  
 	  signUpPage.clearSignUpData();

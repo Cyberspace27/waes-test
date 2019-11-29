@@ -19,16 +19,14 @@
         <methods>
           <include name="beforeClass"/>
           <include name="fillSingUpWrongDay"/>
-          <include name="fillSingUpSuccessful"/>
           <include name="beforeTests"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- tests.SignUpTest -->
       <class name="tests.LoginTest">
         <methods>
-          <include name="signInSuccess"/>
-          <include name="signInFailed"/>
           <include name="beforeClass"/>
+          <include name="beforeC"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- tests.LoginTest -->

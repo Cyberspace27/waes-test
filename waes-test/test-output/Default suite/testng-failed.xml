@@ -5,9 +5,12 @@
     <classes>
       <class name="tests.SignUpTest">
         <methods>
+          <include name="fillSingUpMissingData"/>
           <include name="beforeClass"/>
+          <include name="fillSingUpWrongDay"/>
           <include name="fillSingUpSuccessful"/>
           <include name="beforeTests"/>
+          <include name="fillSingUpInvalidUserName"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- tests.SignUpTest -->

@@ -70,7 +70,7 @@ public class LoginPage extends BasePage {
 	 * @author ariel vc
 	 */
 	public ProfilePage login() {
-		clickElement(By.xpath("//*[@id='login_button']"));
+		clickElementByLocator(By.xpath("//*[@id='login_button']"));
 		return new ProfilePage(driver);
 	}
 
@@ -80,7 +80,7 @@ public class LoginPage extends BasePage {
 	 * @author ariel vc
 	 */
 	public void goToLogin() {
-		clickElement(By.xpath("//a[@id='login_link']"));
+		clickElementByLocator(By.xpath("//a[@id='login_link']"));
 
 	}
 	

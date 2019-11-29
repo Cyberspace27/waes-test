@@ -6,9 +6,9 @@ import generic.BaseTest;
 import pages.LoginPage;
 import pages.SignUpPage;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 
 public class SignUpTest extends BaseTest {
 	
@@ -22,35 +22,38 @@ public class SignUpTest extends BaseTest {
 	  waitTime(3000);	
   }
 
-  
-  
-  
   @Test
   public void fillSingUpMissingData() {
 	  signUpPage.enterSignUpData("","naruto","","testWAES@com",11,"June",1988);
 	 scrollDown(350);
 	 waitTime(3000);
 	 signUpPage.clickSignUpBtn();
+	 scrollUp(350);
 	 Assert.assertTrue(signUpPage.isElementPresent(signUpPage.getlblSingUp()),"The SignUp was not performe as expected");
 	//add 1 more assert try to catch the message error		
   }
   
   @Test
   public void fillSingUpInvalidUserName() {
+	  signUpPage.clearSignUpData();
 	  signUpPage.enterSignUpData("superman","3435465&%$%*","Carmen","testWAES@com",11,"March",1988);
 	 scrollDown(350);
 	 waitTime(3000);
 	 signUpPage.clickSignUpBtn();
+	 scrollUp(350);
 	 Assert.assertTrue(signUpPage.isElementPresent(signUpPage.getlblSingUp()),"The SignUp was not performe as expected");
 	//add 1 more assert try to catch the message error		
   }
   
   @Test
   public void fillSingUpWrongDay() {
+	  
+	  signUpPage.clearSignUpData();
 	  signUpPage.enterSignUpData("Superman","abc123","Clark","testWAES@com",55,"March",1988);
 	 scrollDown(350);
 	 waitTime(3000);
 	 signUpPage.clickSignUpBtn();
+	 scrollUp(350);
 	 Assert.assertTrue(signUpPage.isElementPresent(signUpPage.getlblSingUp()),"The BirthDay is not correct");
 	//add 1 more assert try to catch the message error		
   }
@@ -58,16 +61,21 @@ public class SignUpTest extends BaseTest {
   
   @Test
   public void fillSingUpInvalidEmail() {
+	  
+	  signUpPage.clearSignUpData();
 	  signUpPage.enterSignUpData("Batman","123abc","Bruce","*2.$testWA@ES@com&%",11,"June",1988);
 	 scrollDown(350);
 	 waitTime(3000);
 	 signUpPage.clickSignUpBtn();
+	 scrollUp(350);
 	 Assert.assertTrue(signUpPage.isElementPresent(signUpPage.getlblSingUp()),"The SignUp was not complete");
 	//add 1 more assert try to catch the message error	
   }
   
   @Test
   public void fillSingUpSuccessful() {
+	  
+	  signUpPage.clearSignUpData();
 	  signUpPage.enterSignUpData("arielVC","naruto","ariel","testWAES@com",11,"June",1988);
 	 scrollDown(350);
 	 waitTime(3000);

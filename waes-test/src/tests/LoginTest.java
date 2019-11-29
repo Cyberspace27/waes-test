@@ -12,6 +12,7 @@ public class LoginTest extends BaseTest {
 
 	LoginPage loginPage;
 	ProfilePage profilePage;
+	
 	@BeforeClass
 	public void beforeClass() {
 		loginPage = new LoginPage(driver);

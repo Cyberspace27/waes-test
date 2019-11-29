@@ -53,7 +53,7 @@ public class SignUpPage extends BasePage {
 	}
 	
 	//elements to validate
-	public By lblWelcomeNewProfile = By.xpath("//section[contains(@class,'view-module')]/p[contains(.,'Welcome to your new profile page, ariel!')]");
+	public By lblWelcomeNewProfile = By.xpath("//section[contains(@class,'view-module')]/p[contains(.,'Welcome to your new profile page, Carmen!')]");
 	public WebElement getWelcomeNewProfile() {
 		return driver.findElement(lblWelcomeNewProfile);
 	}
@@ -64,11 +64,6 @@ public class SignUpPage extends BasePage {
 	}
 	
 	
-	
-	
-	
-	
-	
 	public void enterSignUpData(String user, String password, String name, String email, int day,String month, int year) {
 		type(getUserName(), user);
 		type(getNewPassword(), password);
@@ -77,6 +72,14 @@ public class SignUpPage extends BasePage {
 		selectdropDownValue(getBDay(), Integer.toString(day));
 		selectdropDownValue(getBMonth(),month);
 		selectdropDownValue(getBYear(),Integer.toString(year));
+		
+	}
+	
+	public void clearSignUpData() {
+		getUserName().clear();
+		getNewPassword().clear();
+		getName().clear();
+		getEmail().clear();
 		
 	}
 	

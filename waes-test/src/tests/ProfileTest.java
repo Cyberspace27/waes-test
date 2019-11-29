@@ -1,10 +1,13 @@
 package tests;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.AfterClass;
 
-public class ProfileTest {
+import generic.BaseTest;
+import pages.LoginPage;
+import pages.ProfilePage;
+
+import org.testng.annotations.BeforeClass;
+public class ProfileTest extends BaseTest {
 
 	LoginPage loginPage;
 	ProfilePage profilePage;
@@ -17,17 +20,13 @@ public class ProfileTest {
 		loginPage.typeUserPassword("dev", "wizard");
 		loginPage.login();
 	}
-
-	@AfterClass
-	  public void afterClass() {
-		  
-		  
+  
 	@Test
   public void ValidateProfileData() {
 	  
 	//  Your Profile
   }
 
-  }
+  
 
 }

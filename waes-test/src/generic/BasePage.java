@@ -40,7 +40,7 @@ public class BasePage {
 	public void clickElement(WebElement element){
 		 element.click();
 	}
-	public void clickElement(By locator){
+	public void clickElementByLocator(By locator){
 		driver.findElement(locator).click();
 	}
 	
@@ -66,8 +66,5 @@ public class BasePage {
 		 dropdown.selectByVisibleText(optionValue);  
 	}
 	
-  
-	    // Close the Browser  
-	     //   driver.close();  
 	
 }

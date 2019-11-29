@@ -1,0 +1,20 @@
+package generic;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeClass;
+import pages.LoginPage;
+
+public class BaseTest {
+
+	public WebDriver driver = null ;
+	LoginPage loginPage;
+	
+	@BeforeClass
+	  public void beforeClass() {
+		loginPage = new LoginPage(driver);
+		driver = loginPage.chromeDriverConnection();
+		driver.get("https://waesworks.bitbucket.io");
+	//	loginPage.displayUrl("https://waesworks.bitbucket.io");
+	  }
+	
+}

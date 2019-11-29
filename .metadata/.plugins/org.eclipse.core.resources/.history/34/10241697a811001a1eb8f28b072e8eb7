@@ -1,0 +1,101 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+import generic.BasePage;
+
+public class LoginPage extends BasePage {
+	
+	
+	@FindBy(id = "login_link")
+	public WebElement hrfLoginPage;
+	
+	public By userName = By.id("username_input");
+	public WebElement getUserName() {
+		return driver.findElement(userName);
+	}
+	
+	public By passwordT = By.id("password_input");
+	public WebElement getpasswordT() {
+		return driver.findElement(passwordT);
+	}
+	
+	@FindBy(id = "userName")
+	private WebElement txtUserName;
+	
+	@FindBy(id = "password_input")
+	public WebElement txtPassword;
+	
+	@FindBy(id = "login_button")
+	public WebElement btnLogin;
+	
+	
+	@FindBy(xpath = "//a[@id='login_link']")
+	public WebElement test1;
+	
+	@FindBy(how=How.XPATH,using = "//a[@id='login_link']")
+	public WebElement testLink;
+	
+	public By hrfDetailPage = By.id("details_link");
+	public WebElement getHrfDetailPage() {
+		return driver.findElement(hrfDetailPage);
+	}
+	
+	//WebDriver driver;
+
+	public LoginPage(WebDriver driver) {
+		super(driver);
+	//	PageFactory.initElements(driver, this);
+		
+	}
+	
+	public void goToDetailPage() {
+		clickElement(getHrfDetailPage());
+	//	return new DetailPage(driver);
+	}
+	
+	/**
+	 * Method that types credentials for log in
+	 * 
+	 * @param user UserDTO that has user name and password for logging in
+	 * @param context ITestContext that contains all test run parameters, objects and results
+	 * @author ariel vc
+	 */
+	public void typeUserPassword(String user, String password) {
+		
+		//driver.findElement(By.id("username_input")).sendKeys(user);
+		//driver.findElement(By.id("password_input")).sendKeys(password);
+		
+		type(getUserName(), user );
+		type(getpasswordT(), password);
+	}
+	
+	/**
+	 * 	Method that performs the action of login
+	 * 
+	 * @return ProfilePage
+	 * @author ariel vc 
+	 */
+	public void login() {
+		clickElementT(By.xpath("//*[@id='login_button']"));
+		//return new ProfilePage(driver);
+	}
+	
+	/**
+	 * 	Method that performs the action of go to login
+	 * 
+	 * @author ariel vc 
+	 */
+	public void goToLogin() {
+	//	testLink.click();
+		clickElementT(By.xpath("//a[@id='login_link']"));
+	//	driver.findElement(By.xpath("//a[@id='login_link']")).click();
+		
+	}
+	
+	
+}

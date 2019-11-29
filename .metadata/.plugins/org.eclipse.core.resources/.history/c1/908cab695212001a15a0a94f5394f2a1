@@ -1,0 +1,37 @@
+package tests;
+
+import org.testng.annotations.Test;
+
+import generic.BaseTest;
+import pages.LoginPage;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
+
+public class SingUpTest extends BaseTest {
+	
+	LoginPage loginPage;
+	
+  @BeforeClass
+  public void beforeTests() {
+	  loginPage = new LoginPage(driver);
+	  loginPage.goToLogin();
+	  waitTime(3000);
+	  loginPage.typeUserPassword("admin", "dev");
+	  
+		loginPage.login();
+  }
+
+  @AfterClass
+  public void afterClass() {
+  }
+  
+  
+  @Test
+  public void f() {
+	  
+	  
+  }
+  
+
+}

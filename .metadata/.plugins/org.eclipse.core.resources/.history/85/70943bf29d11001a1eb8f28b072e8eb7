@@ -1,0 +1,55 @@
+package tests;
+
+import org.testng.annotations.Test;
+import generic.BaseTest;
+import pages.DetailPage;
+import pages.LoginPage;
+import pages.ProfilePage;
+
+import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
+
+public class Test1  extends BaseTest{
+  
+	public WebDriver driver;
+    LoginPage loginPage;
+    ProfilePage profilePage;
+    DetailPage detailPage;
+	
+  @BeforeTest
+  public void beforeTest() {
+	   loginPage = new LoginPage(driver);
+	  // detailPage = new DetailPage(driver);
+	  driver = loginPage.chromeDriverConnection();
+	  driver.get("https://waesworks.bitbucket.io");
+	//  loginPage.displayUrl("https://waesworks.bitbucket.io/");
+  }
+
+  
+
+  
+  @Test
+  public void logInSuccessfull() throws InterruptedException {
+	
+	 // driver.findElement(By.xpath("//a[@id='login_link']")).click();
+	
+	  loginPage.goToLogin();
+	  Thread.sleep(6000);
+	//  loginPage.goTo(PropertiesKeys.ENDPOINT_CUSTOMER_PORTAL, context);
+		loginPage.typeUserPassword("admin", "hero");
+		profilePage = loginPage.login();
+		Thread.sleep(6000);
+  }
+  @Test
+  public void TestDetailPage() {
+	  System.out.println("HOLA ESTOY DENTRO DEL TEST New");
+	 // driver.findElement(By.xpath("//a[@id='login_link']")).click();
+	   profilePage.goToDetailPage();
+	
+  }
+  
+  
+  
+}

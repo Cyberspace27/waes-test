@@ -1,0 +1,44 @@
+package tests;
+
+import org.testng.annotations.Test;
+
+import generic.BaseTest;
+import pages.LoginPage;
+import pages.SignUpPage;
+
+import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+
+public class SignUpTest extends BaseTest {
+	
+	LoginPage loginPage;
+	SignUpPage signUpPage;
+	
+  @BeforeClass
+  public void beforeTests() {
+	  loginPage = new LoginPage(driver);
+	  signUpPage = loginPage.goToSignUp();
+	  waitTime(3000);	
+  }
+
+  @AfterClass
+  public void afterClass() {
+  }
+  
+  
+  @Test
+  public void fillSingUpInvalid() {
+	  signUpPage.enterSignUpData("","naruto","ariel","testWAES@com",11,"June",1988);
+	 scrollDown(350);
+	 waitTime(3000);
+	 signUpPage.clickSignUpBtn();
+	 Assert.assertTrue(signUpPage.isElementPresent(signUpPage.getWelcomeNewProfile()),"The SignUp was successful");
+		
+  }
+  
+
+}

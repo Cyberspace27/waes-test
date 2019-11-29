@@ -1,0 +1,67 @@
+package tests;
+
+import org.testng.annotations.Test;
+
+import generic.BasePage;
+import generic.BaseTest;
+import pages.DetailPage;
+import pages.LoginPage;
+import pages.ProfilePage;
+
+import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+
+public class Test1  extends BaseTest{
+  
+	public WebDriver driver;
+    LoginPage loginPage;
+    ProfilePage profilePage;
+    DetailPage detailPage;
+	
+  @BeforeClass
+  public void beforeClass() {
+	  //BasePage bp = new BasePage(driver);
+	  loginPage = new LoginPage(driver);
+	  detailPage = new DetailPage(driver);
+	   
+	  driver = loginPage.chromeDriverConnection();
+	  driver.get("https://waesworks.bitbucket.io");
+	 
+	  
+	//  loginPage.displayUrl("https://waesworks.bitbucket.io/");
+  }
+
+
+  
+  @Test(priority=1)
+  public void logInSuccessfull() throws InterruptedException {
+	
+	 // driver.findElement(By.xpath("//a[@id='login_link']")).click();
+	
+	  loginPage.goToLogin();
+	  Thread.sleep(3000);
+	//  loginPage.goTo(PropertiesKeys.ENDPOINT_CUSTOMER_PORTAL, context);
+		loginPage.typeUserPassword("admin", "hero");
+		 loginPage.login();
+		Thread.sleep(3000);
+	//	driver.findElement(By.xpath("//a[@id='details_link']")).click();
+		  //loginPage.goToDetailPage();
+	//	Thread.sleep(6000);
+  }
+  @Test(priority=2)
+  public void TestDetailPage() throws InterruptedException {
+	  System.out.println("HOLA ESTOY DENTRO DEL TEST New");
+	  profilePage = new ProfilePage(driver);
+	 profilePage.goToDetailPage();
+	//  driver.findElement(By.xpath("//a[@id='details_link']")).click();
+	  Thread.sleep(6000);
+	  
+	
+  }
+  
+  
+  
+}

@@ -1,0 +1,45 @@
+package tests;
+
+import org.testng.annotations.Test;
+
+import generic.BaseTest;
+import pages.LoginPage;
+import pages.ProfilePage;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
+public class LoginTest extends BaseTest {
+
+	LoginPage loginPage;
+	ProfilePage profilePage;
+	@BeforeClass
+	public void beforeClass() {
+		loginPage = new LoginPage(driver);
+		driver = loginPage.chromeDriverConnection();
+		loginPage.displayUrl("https://waesworks.bitbucket.io");
+
+	}
+
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(priority=2 ,description = "logIn with invalid data", groups = { "login" })
+	public void signInFailed() throws InterruptedException {
+		loginPage.goToLogin();
+		 Thread.sleep(3000);
+		loginPage.typeUserPassword("admin", "invalid");
+		loginPage.login();
+
+	}
+
+	@Test(priority=1 ,description = "logIn with correct data", groups = { "login" })
+	public void signInSuccess() throws InterruptedException {
+		loginPage.goToLogin();
+		 Thread.sleep(3000);
+		loginPage.typeUserPassword("admin", "hero");
+		loginPage.login();
+
+	}
+
+}

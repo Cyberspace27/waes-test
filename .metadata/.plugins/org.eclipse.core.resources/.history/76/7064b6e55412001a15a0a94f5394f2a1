@@ -1,0 +1,67 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import generic.BasePage;
+
+public class SignUpPage extends BasePage {
+	
+	
+	public SignUpPage(WebDriver driver) {
+		super(driver);
+	}
+	
+	public By txtUserName = By.id("username_input");
+	public WebElement getUserName() {
+		return driver.findElement(txtUserName);
+	}
+	
+	public By txtPassword = By.name("password");
+	public WebElement getNewPassword() {
+		return driver.findElement(txtPassword);
+	}
+	
+	public By txtName = By.id("name_input");
+	public WebElement getName() {
+		return driver.findElement(txtName);
+	}
+	
+	public By txtEmail = By.id("email_input");
+	public WebElement getEmail() {
+		return driver.findElement(txtEmail);
+	}
+	public By btnSignUp = By.id("submit_button");
+	public WebElement getSignUpButton() {
+		return driver.findElement(btnSignUp);
+	}
+	
+	
+	public By txtDay = By.id("day_select");
+	public WebElement getBDay() {
+		return driver.findElement(txtDay);
+	}
+	
+	
+	//private WebElement testDropDown = driver.findElement(By.id(""));  
+	
+	public void enterSignUpData(String user, String password, String name, String email, int day,int month, int year) {
+		type(getUserName(), user);
+		type(getNewPassword(), password);
+		type(getEmail(), name);
+		type(getSignUpButton(), email);
+		
+		selectdropDownValue(getBDay(), Integer.toString(day));
+		//selectdropDownValue(testDropDown,Integer.toString(month));
+		//selectdropDownValue(testDropDown,Integer.toString(year));
+		
+	}
+	
+	public void clickSignUpBtn() {
+		clickElement(submitBtn);
+		
+	}
+	
+	
+}

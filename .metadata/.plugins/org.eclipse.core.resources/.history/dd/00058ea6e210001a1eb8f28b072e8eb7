@@ -1,0 +1,27 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import generic.BasePage;
+
+public class LoginPage extends BasePage {
+	
+	@FindBy(id = "username_input")
+	private WebElement userName;
+	
+	@FindBy(id = "password_input")
+	public WebElement lblPastDueMSJ;
+
+	
+	
+	@FindBy(xpath = "//div[@class='welcome']/h4[contains(@class,'greeting')]")
+	public WebElement welcomeTitle;
+
+
+	public LoginPage(WebDriver driver) {
+		super(driver);
+		
+	}
+}

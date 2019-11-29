@@ -1,0 +1,73 @@
+package generic;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.testng.ITestContext;
+
+/**
+ * Singleton class that maps the WebElements and actions for global elements on Customer Portal via static methods
+ * 
+ * @author acastellon March 2019
+ */
+public class UscpCommons extends BaseCommons {
+	/**
+	 * Default value for level of logging when calling the log methods of CustomLogger class in the page classes
+	 */
+	private static final String logLevel = CustomLogger.LEVEL_DEBUG;
+	
+	/**
+	 * Private constructor for Singleton
+	 * 
+	 * @author acastellon March 2019
+	 */
+	private UscpCommons() {
+	}
+	
+	/**
+	 * Method that waits until loading animation disappears
+	 * 
+	 * @param driver WebDriver that will be used to simulate the user actions
+	 * @param context ITestContext that contains all test run parameters, objects and results
+	 * @author acastellon March 2019
+	 */
+	public static boolean waitLoading(WebDriver driver, ITestContext context) {
+		try {
+			CustomLogger.log("Loading...", logLevel, context);
+			
+			Wait<WebDriver> wait = getWait(driver, context);
+
+			String xpath = "//div[div[@class='loading']]";
+			return wait.until(ExpectedConditions.attributeToBe(By.xpath(xpath), "class", "appLoader ng-hide"));
+		} catch (Exception e) {
+			CustomLogger.logError("Loading timeout", logLevel, context);
+			return false;
+		}
+	}
+	
+	/**
+	 * Method that clicks the menu item to perform the log out action
+	 * 
+	 * @param driver WebDriver that will be used to simulate the user actions
+	 * @param context ITestContext that contains all test run parameters, objects and results
+	 * @author acastellon March 2019
+	 */
+	public static void logOut(WebDriver driver, ITestContext context) {
+		CustomLogger.log("Logging out...", logLevel, context);
+		UscpMenu.navigateTo(UscpMenu.LOGOUT, driver, context);
+	}
+	
+	/**
+	 * Method that closes the survey pop up
+	 * 
+	 * @param driver WebDriver that will be used to simulate the user actions
+	 * @param context ITestContext that contains all test run parameters, objects and results
+	 * @author acastellon April 2019
+	 */
+	public static void closeSurveyPopUp(WebDriver driver, ITestContext context) {
+		CustomLogger.log("Closing survey pop up...", logLevel, context);
+		UscpSurveyVisaGiftCardPage survey = new UscpSurveyVisaGiftCardPage(driver, context);
+		survey.close(context);
+	}
+}

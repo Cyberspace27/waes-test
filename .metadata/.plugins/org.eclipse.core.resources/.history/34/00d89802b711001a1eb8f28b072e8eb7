@@ -1,0 +1,45 @@
+package tests;
+
+import org.testng.annotations.Test;
+
+import generic.BaseTest;
+import pages.DetailPage;
+import pages.LoginPage;
+
+import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+
+public class LoginTest extends BaseTest {
+
+	LoginPage loginPage;
+
+	@BeforeClass
+	public void beforeClass() {
+		loginPage = new LoginPage(driver);
+		driver = loginPage.chromeDriverConnection();
+		loginPage.displayUrl("https://waesworks.bitbucket.io");
+		// driver.get("https://waesworks.bitbucket.io");
+
+	}
+
+	@AfterClass
+	public void afterClass() {
+	}
+
+	@Test(description = "logIn with invalid data", groups = { "login" })
+	public void signInFailed() {
+
+	}
+
+	@Test(description = "logIn with correct data", groups = { "login" })
+	public void signInSuccess() {
+		loginPage.goToLogin();
+		loginPage.typeUserPassword("admin", "hero");
+		loginPage.login();
+
+	}
+
+}

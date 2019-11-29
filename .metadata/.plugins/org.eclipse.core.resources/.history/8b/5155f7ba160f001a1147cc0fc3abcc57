@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Customer Portal Add Payment Method Test" parallel="classes">
+	<!-- Parameters for test evidence -->
+	<parameter name="LOG_LEVEL" value="info" /> <!-- [all, trace, debug, info, warn, error, fatal, off] -->
+	<parameter name="LOG_CONSOLE" value="true" />
+	<parameter name="LOG_RESOURCES_MEASUREMENTS" value="true" />
+
+	<!-- Parameters for Browser Configuration -->
+	<parameter name="BROWSER" value="chrome" /> <!-- [chrome] -->
+	<parameter name="HEADLESS" value="false" />
+	<parameter name="WAITING_TIME" value="30" />
+
+	<!-- Parameters for User Configuration -->
+	<parameter name="DOMAIN_USERNAME" value="${DOMAIN_USERNAME}" />
+	<parameter name="DOMAIN_PASSWORD" value="${DOMAIN_PASSWORD}" />
+
+	<!-- Parameters for Custom Report and Jira -->
+	<parameter name="JIRA_PROJECT" value="CP" />
+
+	<!-- Parameters for Database configuration -->
+	<parameter name="DB_TIME_OUT" value="180" /> <!-- Time in seconds -->
+
+	<test name="Customer Portal Add Payment Method Test">
+		<classes>
+			<class name="tests.UscpAddPaymentMethodTest" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,30 @@
+package tests;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
+
+public class ProfileTest {
+
+	@BeforeClass
+	public void beforeClass() {
+		
+		loginPage.goToLogin();
+		waitTime(3000);
+		loginPage.typeUserPassword("admin", "invalid");
+		loginPage.login();
+	}
+
+	@AfterClass
+	  public void afterClass() {
+		  
+		  
+	@Test
+  public void ValidateProfileData() {
+	  
+	  Your Profile
+  }
+
+  }
+
+}

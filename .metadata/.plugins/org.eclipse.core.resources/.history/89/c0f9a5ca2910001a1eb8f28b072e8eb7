@@ -1,0 +1,164 @@
+package pages;
+
+//import org.json.simple.JSONObject;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.testng.ITestContext;
+
+import generic.BasePage;
+import generic.UscpCommons;
+
+/**
+ * Class that maps the WebElements and actions of the login page
+ * 
+ * @author jviquez February 2019
+ */
+public class UscpLoginPage extends BasePage {
+/*
+	@FindBy(name = "username")
+	private WebElement txtUsername;
+
+	@FindBy(name = "password")
+	private WebElement txtPassword;
+
+	@FindBy(xpath = "//*[@data-e2e='submitBtn']")
+	private WebElement btnLogin;
+		
+	@FindBy(xpath = "(//*[@data-e2e='forgotpassword']")
+	private WebElement lnkForgotPassword;
+
+	@FindBy(xpath = "(//*[@data-e2e='help']")
+	private WebElement lnkHelp;
+
+	@FindBy(xpath = "(//*[@data-e2e='create']")
+	private WebElement lnkCreateAccount;
+	
+	@FindBy(xpath ="(//alerts/div[@class='growl']//div)[2]" )
+	private WebElement lblInvalidUserMessage;
+
+	/**
+	 * Constructor
+	 * 
+	 * @param driver  WebDriver that will be used to simulate the user actions
+	 * @param context ITestContext that contains all test run parameters, objects and results
+	 * @author jviquez February 2019
+	 */
+	public UscpLoginPage(WebDriver driver, ITestContext context) {
+		super(driver, context);
+	//	this.relativeUrl = "/#/login";
+	}
+
+	/**
+	 * Method that types credentials for log in
+	 * 
+	 * @param user UserDTO that has user name and password for logging in
+	 * @param context ITestContext that contains all test run parameters, objects and results
+	 * @author jviquez February 2019
+	 */
+	public void typeUserPassword( ITestContext context) {
+		//CustomLogger.log("Typing credentials [" + user.userName + ", " + user.password + "]", logLevel, context);
+	//	type(txtUsername, user.userName, context);
+	//	type(txtPassword, user.password, context);
+	}
+
+	/**
+	 * Method that performs the action of log in
+	 * 
+	 * @param user UserDTO that has user name and password for logging in
+	 * @param context ITestContext that contains all test run parameters, objects and results
+	 * @return UscpHomePage
+	 * @author jviquez February 2019
+	 */
+	public UscpHomePage login(ITestContext context) {
+		CustomLogger.log("Logging in...", logLevel, context);
+		clickElement(btnLogin, context);
+		return new UscpHomePage(driver, context);
+	}
+
+	/**
+	 * Method that navigates to Login page, types credentials, performs action of log in and closes the survey pop up
+	 * 
+	 * @param user UserDTO that has user name and password for logging in
+	 * @param context ITestContext that contains all test run parameters, objects and results
+	 * @return UscpHomePage
+	 * @author jviquez February 2019
+	 */
+	public UscpHomePage login(UserCustomerPortalDTO user, ITestContext context) {
+		goTo(PropertiesKeys.ENDPOINT_CUSTOMER_PORTAL, context);
+		typeUserPassword(user, context);
+		UscpHomePage home = this.login(context); 
+		UscpCommons.waitLoading(driver, context);
+		UscpCommons.closeSurveyPopUp(driver, context);
+		
+		return home;
+	}
+	
+	/**
+	 * Method that verifies if the login page is displayed
+	 * 
+	 * @param context ITestContext that contains all test run parameters, objects and results
+	 * @author jviquez February 2019
+	 */
+	public boolean isloaded (ITestContext context) {
+		return isElementVisible(btnLogin, context);
+	}
+	
+	/**
+	 * Method that verifies if invalid user message is displayed
+	 * 
+	 * @param context ITestContext that contains all test run parameters, objects and results
+	 * @author jviquez February 2019
+	 */
+	public boolean isInvalidUserMessageDisplayed (ITestContext context) {
+		return isElementVisible(lblInvalidUserMessage, context);
+	}
+	
+	/**
+	 * @deprecated Used as hotfix
+	 */
+	public String getPassword(ITestContext context) {
+		String password = null;
+		
+		password = context.getSuite().getParameter("DOMAIN_PASSWORD");
+		
+		if(null != password && !password.isEmpty() && !password.equals("${DOMAIN_PASSWORD}")) {
+			return password;
+		} else {
+			String jiraUser = PropertiesHandler.get(PropertiesKeys.JIRA_USERNAME);
+			String jiraPassword = PropertiesHandler.get(PropertiesKeys.JIRA_PASSWORD);
+					
+			JSONObject result = ApiClient.get("https://confluence.snapfinance.com/rest/api/content/22904934?expand=body.view", jiraUser, jiraPassword);
+			JSONObject body = (JSONObject)result.get("body");
+			JSONObject view = (JSONObject)body.get("view");
+			return view.get("value").toString().replaceAll("\\/", "/");
+		}
+	}
+
+	/**
+	 * @deprecated
+	 */
+	public void login(String username, String password, ITestContext context) {
+		UserCustomerPortalDTO user = new UserCustomerPortalDTO(context);
+		user.userName = username;
+		user.password = getPassword(context);
+		login(user, context);
+	}
+
+	/**
+	 * @deprecated
+	 */
+	public UscpHomePageSSL setLoginActionSSL(String username, String password, ITestContext context) {
+		login(username, password, context);
+		return new UscpHomePageSSL(driver, context);
+	}
+
+	/**
+	 * @deprecated  
+	 */
+	public UscpHomePageSLN setLoginActionSLN(String username, String password, ITestContext context) {
+		login(username, password, context);
+		return new UscpHomePageSLN(driver, context);
+	}
+	*/
+}

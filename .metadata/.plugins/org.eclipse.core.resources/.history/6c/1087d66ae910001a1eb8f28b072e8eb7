@@ -1,0 +1,71 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import generic.BasePage;
+
+public class LoginPage extends BasePage {
+	
+	
+	
+	
+	@FindBy(id = "login_link")
+	private WebElement hrfLoginPage;
+	
+	@FindBy(id = "username_input")
+	private WebElement txtUserName;
+	
+	@FindBy(id = "password_input")
+	public WebElement txtPassword;
+	
+	@FindBy(id = "login_button")
+	public WebElement btnLogin;
+	
+	
+	@FindBy(xpath = "//div[@class='welcome']/h4[contains(@class,'greeting')]")
+	public WebElement welcomeTitle;
+	WebDriver driver;
+
+	public LoginPage(WebDriver driver) {
+		super(driver);
+		
+	}
+	
+	/**
+	 * Method that types credentials for log in
+	 * 
+	 * @param user UserDTO that has user name and password for logging in
+	 * @param context ITestContext that contains all test run parameters, objects and results
+	 * @author ariel vc
+	 */
+	public void typeUserPassword(String user, String password) {
+		
+		type(txtUserName, user );
+		type(txtPassword, password);
+	}
+	
+	/**
+	 * 	Method that performs the action of login
+	 * 
+	 * @return ProfilePage
+	 * @author ariel vc 
+	 */
+	public ProfilePage login() {
+		clickElement(btnLogin);
+		return new ProfilePage(driver);
+	}
+	
+	/**
+	 * 	Method that performs the action of go to login
+	 * 
+	 * @author ariel vc 
+	 */
+	public void goToLogin() {
+		hrfLoginPage.click();
+		
+	}
+	
+	
+}

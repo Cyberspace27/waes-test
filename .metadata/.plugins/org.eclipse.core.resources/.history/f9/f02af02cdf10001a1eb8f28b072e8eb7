@@ -1,0 +1,31 @@
+package tests;
+
+import org.testng.annotations.Test;
+import generic.BaseTest;
+import pages.LoginPage;
+
+import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
+
+public class Test1  extends BaseTest{
+  
+	private WebDriver driver;
+	LoginPage loginPage;
+	
+  @BeforeTest
+  public void beforeTest() {
+	  loginPage = new LoginPage(driver);
+	  driver = loginPage.chromeDriverConnection();
+	//  driver.get("https://waesworks.bitbucket.io/");
+	  loginPage.displayUrl("https://waesworks.bitbucket.io/");
+  }
+
+  
+
+  
+  @Test
+  public void f() {
+	  System.out.println("HOLA ESTOY DENTRO DEL TEST F");
+  }
+}

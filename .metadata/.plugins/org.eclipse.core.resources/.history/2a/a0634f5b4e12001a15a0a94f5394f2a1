@@ -1,0 +1,26 @@
+package tests;
+
+import org.testng.annotations.Test;
+
+import generic.BaseTest;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
+
+public class SingUpTest extends BaseTest {
+	
+ 
+
+  @AfterClass
+  public void afterClass() {
+  }
+  
+  
+  @Test
+  public void f() {
+	  
+	  System.out.println("Testing singUp");
+  }
+  
+
+}

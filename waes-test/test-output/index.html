@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods, 1 failed,  1 skipped,  7 passed</span>
+                    <span class="method-stats">9 methods, 3 failed,  1 skipped,  5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,7 +101,17 @@
                     <div class="method-list-content failed suite-Test">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="tests.SignUpTest" hash-for-method="fillSingUpWrongDay">fillSingUpWrongDay</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="tests.SignUpTest" hash-for-method="fillSingUpInvalidEmail">fillSingUpInvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="tests.SignUpTest" hash-for-method="fillSingUpInvalidName">fillSingUpInvalidName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="tests.SignUpTest" hash-for-method="fillSingUpSuccessful">fillSingUpSuccessful</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Test -->
@@ -134,22 +144,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="tests.SignUpTest" hash-for-method="fillSingUpInvalidEmail">fillSingUpInvalidEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Test" title="tests.SignUpTest" hash-for-method="fillSingUpInvalidUserName">fillSingUpInvalidUserName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Test" title="tests.SignUpTest" hash-for-method="fillSingUpMissingData">fillSingUpMissingData</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test" title="tests.SignUpTest" hash-for-method="fillSingUpSuccessful">fillSingUpSuccessful</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -182,19 +182,93 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="fillSingUpWrongDay">
-                  </a> <!-- fillSingUpWrongDay -->
-                  <span class="method-name">fillSingUpWrongDay</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 55
+                  <a name="fillSingUpInvalidEmail">
+                  </a> <!-- fillSingUpInvalidEmail -->
+                  <span class="method-name">fillSingUpInvalidEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#username_input&quot;}
+  (Session info: chrome=78.0.3904.108)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
 System info: host: &apos;ARIEL-PC&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_111&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
-	at generic.BasePage.selectdropDownValue(BasePage.java:66)
-	at pages.SignUpPage.enterSignUpData(SignUpPage.java:72)
-	at tests.SignUpTest.fillSingUpWrongDay(SignUpTest.java:50)
-... Removed 24 stack frames
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\CYBERS~1\AppData\Local\Temp\scoped_dir9224_252703723}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64506}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 591437afe831ab09c3651c8563263974
+*** Element info: {Using=id, value=username_input}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:462)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at pages.SignUpPage.getUserName(SignUpPage.java:18)
+	at pages.SignUpPage.clearSignUpData(SignUpPage.java:79)
+	at tests.SignUpTest.fillSingUpInvalidEmail(SignUpTest.java:62)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillSingUpInvalidName">
+                  </a> <!-- fillSingUpInvalidName -->
+                  <span class="method-name">fillSingUpInvalidName</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[contains(@class,&apos;view-module&apos;)]/h1[text()=&apos;Sign Up&apos;]&quot;}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;ARIEL-PC&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\CYBERS~1\AppData\Local\Temp\scoped_dir9224_252703723}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64506}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 591437afe831ab09c3651c8563263974
+*** Element info: {Using=xpath, value=//section[contains(@class,&apos;view-module&apos;)]/h1[text()=&apos;Sign Up&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at pages.SignUpPage.getlblSingUp(SignUpPage.java:63)
+	at tests.SignUpTest.fillSingUpInvalidName(SignUpTest.java:54)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillSingUpSuccessful">
+                  </a> <!-- fillSingUpSuccessful -->
+                  <span class="method-name">fillSingUpSuccessful</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#username_input&quot;}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;ARIEL-PC&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\CYBERS~1\AppData\Local\Temp\scoped_dir9224_252703723}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64506}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 591437afe831ab09c3651c8563263974
+*** Element info: {Using=id, value=username_input}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:462)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at pages.SignUpPage.getUserName(SignUpPage.java:18)
+	at pages.SignUpPage.clearSignUpData(SignUpPage.java:79)
+	at tests.SignUpTest.fillSingUpSuccessful(SignUpTest.java:74)
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -238,13 +312,6 @@ Driver info: driver.version: unknown
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="fillSingUpInvalidEmail">
-                  </a> <!-- fillSingUpInvalidEmail -->
-                  <span class="method-name">fillSingUpInvalidEmail</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="fillSingUpInvalidUserName">
                   </a> <!-- fillSingUpInvalidUserName -->
                   <span class="method-name">fillSingUpInvalidUserName</span>
@@ -255,13 +322,6 @@ Driver info: driver.version: unknown
                   <a name="fillSingUpMissingData">
                   </a> <!-- fillSingUpMissingData -->
                   <span class="method-name">fillSingUpMissingData</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="fillSingUpSuccessful">
-                  </a> <!-- fillSingUpSuccessful -->
-                  <span class="method-name">fillSingUpSuccessful</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -361,37 +421,37 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'fillSingUpWrongDay')
+data.setCell(0, 1, 'fillSingUpInvalidName')
 data.setCell(0, 2, 'tests.SignUpTest')
-data.setCell(0, 3, 20832);
+data.setCell(0, 3, 21044);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'signInFailed')
-data.setCell(1, 2, 'tests.LoginTest')
-data.setCell(1, 3, 3784);
+data.setCell(1, 1, 'fillSingUpSuccessful')
+data.setCell(1, 2, 'tests.SignUpTest')
+data.setCell(1, 3, 20041);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'signInSuccess')
-data.setCell(2, 2, 'tests.LoginTest')
-data.setCell(2, 3, 3595);
+data.setCell(2, 1, 'fillSingUpInvalidEmail')
+data.setCell(2, 2, 'tests.SignUpTest')
+data.setCell(2, 3, 20040);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'fillSingUpMissingData')
-data.setCell(3, 2, 'tests.SignUpTest')
-data.setCell(3, 3, 3487);
+data.setCell(3, 1, 'signInFailed')
+data.setCell(3, 2, 'tests.LoginTest')
+data.setCell(3, 3, 3669);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'fillSingUpInvalidUserName')
-data.setCell(4, 2, 'tests.SignUpTest')
-data.setCell(4, 3, 3264);
+data.setCell(4, 1, 'signInSuccess')
+data.setCell(4, 2, 'tests.LoginTest')
+data.setCell(4, 3, 3530);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'fillSingUpInvalidEmail')
+data.setCell(5, 1, 'fillSingUpMissingData')
 data.setCell(5, 2, 'tests.SignUpTest')
-data.setCell(5, 3, 1441);
+data.setCell(5, 3, 2006);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'fillSingUpSuccessful')
+data.setCell(6, 1, 'fillSingUpInvalidUserName')
 data.setCell(6, 2, 'tests.SignUpTest')
-data.setCell(6, 3, 1047);
+data.setCell(6, 3, 1037);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'f')
 data.setCell(7, 2, 'tests.DetailTest')
-data.setCell(7, 3, 2);
+data.setCell(7, 3, 1);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'ValidateProfileData')
 data.setCell(8, 2, 'tests.ProfileTest')
@@ -400,7 +460,7 @@ window.suiteTableData['Test']= { tableData: data, tableDiv: 'times-div-Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Test">
               </div> <!-- times-div-Test -->
             </div> <!-- times-div -->
@@ -433,56 +493,60 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeC</span>
-                <span class="method-start">11153 ms</span>
+                <span class="method-start">12192 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">signInFailed</span>
-                <span class="method-start">11164 ms</span>
+                <span class="method-start">12200 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">signInSuccess</span>
-                <span class="method-start">14951 ms</span>
+                <span class="method-start">15872 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">18548 ms</span>
+                <span class="method-start">19404 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.SignUpTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">18551 ms</span>
+                <span class="method-start">20755 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeTests</span>
-                <span class="method-start">48200 ms</span>
+                <span class="method-start">25845 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">fillSingUpMissingData</span>
-                <span class="method-start">48318 ms</span>
+                <span class="method-start">25985 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">fillSingUpInvalidUserName</span>
-                <span class="method-start">51811 ms</span>
+                <span class="method-start">27993 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">fillSingUpWrongDay</span>
-                <span class="method-start">55077 ms</span>
+                <span class="method-name">fillSingUpInvalidName</span>
+                <span class="method-start">29032 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">fillSingUpInvalidEmail</span>
-                <span class="method-start">75999 ms</span>
+                <span class="method-start">50082 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">fillSingUpSuccessful</span>
-                <span class="method-start">77442 ms</span>
+                <span class="method-start">70127 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">78490 ms</span>
+                <span class="method-start">90172 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -491,26 +555,26 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">78490 ms</span>
+                <span class="method-start">90886 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">ValidateProfileData</span>
-                <span class="method-start">78493 ms</span>
+                <span class="method-start">90890 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.DetailTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">78498 ms</span>
+                <span class="method-start">90909 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">f</span>
-                <span class="method-start">78498 ms</span>
+                <span class="method-start">90910 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">78501 ms</span>
+                <span class="method-start">90912 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

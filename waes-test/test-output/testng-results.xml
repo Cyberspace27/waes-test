@@ -1,73 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" total="9" passed="7">
+<testng-results skipped="1" failed="3" total="9" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Test" duration-ms="78514" started-at="2019-11-29T06:27:54Z" finished-at="2019-11-29T06:29:13Z">
+  <suite name="Test" duration-ms="90924" started-at="2019-11-29T06:37:44Z" finished-at="2019-11-29T06:39:15Z">
     <groups>
       <group name="login">
         <method signature="LoginTest.signInFailed()[pri:1, instance:tests.LoginTest@e25b2fe]" name="signInFailed" class="tests.LoginTest"/>
         <method signature="LoginTest.signInSuccess()[pri:2, instance:tests.LoginTest@e25b2fe]" name="signInSuccess" class="tests.LoginTest"/>
       </group> <!-- login -->
     </groups>
-    <test name="Test" duration-ms="78514" started-at="2019-11-29T06:27:54Z" finished-at="2019-11-29T06:29:13Z">
+    <test name="Test" duration-ms="90924" started-at="2019-11-29T06:37:44Z" finished-at="2019-11-29T06:39:15Z">
       <class name="tests.LoginTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.LoginTest@e25b2fe]" name="beforeClass" is-config="true" duration-ms="11153" started-at="2019-11-29T00:27:54Z" finished-at="2019-11-29T00:28:06Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.LoginTest@e25b2fe]" name="beforeClass" is-config="true" duration-ms="12192" started-at="2019-11-29T00:37:44Z" finished-at="2019-11-29T00:37:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeC()[pri:0, instance:tests.LoginTest@e25b2fe]" name="beforeC" is-config="true" duration-ms="0" started-at="2019-11-29T00:28:06Z" finished-at="2019-11-29T00:28:06Z">
+        <test-method status="PASS" signature="beforeC()[pri:0, instance:tests.LoginTest@e25b2fe]" name="beforeC" is-config="true" duration-ms="0" started-at="2019-11-29T00:37:56Z" finished-at="2019-11-29T00:37:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeC -->
-        <test-method status="PASS" signature="signInFailed()[pri:1, instance:tests.LoginTest@e25b2fe]" name="signInFailed" duration-ms="3784" started-at="2019-11-29T00:28:06Z" description="logIn with invalid data" finished-at="2019-11-29T00:28:09Z">
+        <test-method status="PASS" signature="signInFailed()[pri:1, instance:tests.LoginTest@e25b2fe]" name="signInFailed" duration-ms="3669" started-at="2019-11-29T00:37:56Z" description="logIn with invalid data" finished-at="2019-11-29T00:38:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInFailed -->
-        <test-method status="PASS" signature="signInSuccess()[pri:2, instance:tests.LoginTest@e25b2fe]" name="signInSuccess" duration-ms="3595" started-at="2019-11-29T00:28:09Z" description="logIn with correct data" finished-at="2019-11-29T00:28:13Z">
+        <test-method status="PASS" signature="signInSuccess()[pri:2, instance:tests.LoginTest@e25b2fe]" name="signInSuccess" duration-ms="3530" started-at="2019-11-29T00:38:00Z" description="logIn with correct data" finished-at="2019-11-29T00:38:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInSuccess -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.LoginTest@e25b2fe]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-11-29T00:28:13Z" finished-at="2019-11-29T00:28:13Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.LoginTest@e25b2fe]" name="afterClass" is-config="true" duration-ms="1348" started-at="2019-11-29T00:38:04Z" finished-at="2019-11-29T00:38:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- tests.LoginTest -->
       <class name="tests.SignUpTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.SignUpTest@754ba872]" name="beforeClass" is-config="true" duration-ms="29649" started-at="2019-11-29T00:28:13Z" finished-at="2019-11-29T00:28:43Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.SignUpTest@754ba872]" name="beforeClass" is-config="true" duration-ms="5089" started-at="2019-11-29T00:38:05Z" finished-at="2019-11-29T00:38:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeTests()[pri:0, instance:tests.SignUpTest@754ba872]" name="beforeTests" is-config="true" duration-ms="117" started-at="2019-11-29T00:28:43Z" finished-at="2019-11-29T00:28:43Z">
+        <test-method status="PASS" signature="beforeTests()[pri:0, instance:tests.SignUpTest@754ba872]" name="beforeTests" is-config="true" duration-ms="140" started-at="2019-11-29T00:38:10Z" finished-at="2019-11-29T00:38:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTests -->
-        <test-method status="PASS" signature="fillSingUpMissingData()[pri:1, instance:tests.SignUpTest@754ba872]" name="fillSingUpMissingData" duration-ms="3487" started-at="2019-11-29T00:28:43Z" finished-at="2019-11-29T00:28:46Z">
+        <test-method status="PASS" signature="fillSingUpMissingData()[pri:1, instance:tests.SignUpTest@754ba872]" name="fillSingUpMissingData" duration-ms="2006" started-at="2019-11-29T00:38:10Z" finished-at="2019-11-29T00:38:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillSingUpMissingData -->
-        <test-method status="PASS" signature="fillSingUpInvalidUserName()[pri:2, instance:tests.SignUpTest@754ba872]" name="fillSingUpInvalidUserName" duration-ms="3264" started-at="2019-11-29T00:28:46Z" finished-at="2019-11-29T00:28:50Z">
+        <test-method status="PASS" signature="fillSingUpInvalidUserName()[pri:2, instance:tests.SignUpTest@754ba872]" name="fillSingUpInvalidUserName" duration-ms="1037" started-at="2019-11-29T00:38:12Z" finished-at="2019-11-29T00:38:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillSingUpInvalidUserName -->
-        <test-method status="FAIL" signature="fillSingUpWrongDay()[pri:3, instance:tests.SignUpTest@754ba872]" name="fillSingUpWrongDay" duration-ms="20832" started-at="2019-11-29T00:28:50Z" finished-at="2019-11-29T00:29:10Z">
+        <test-method status="FAIL" signature="fillSingUpInvalidName()[pri:3, instance:tests.SignUpTest@754ba872]" name="fillSingUpInvalidName" duration-ms="21044" started-at="2019-11-29T00:38:13Z" finished-at="2019-11-29T00:38:34Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot locate element with text: 55
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//section[contains(@class,'view-module')]/h1[text()='Sign Up']"}
+  (Session info: chrome=78.0.3904.108)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
 System info: host: 'ARIEL-PC', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
-Driver info: driver.version: unknown]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\CYBERS~1\AppData\Local\Temp\scoped_dir9224_252703723}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64506}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 591437afe831ab09c3651c8563263974
+*** Element info: {Using=xpath, value=//section[contains(@class,'view-module')]/h1[text()='Sign Up']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 55
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[contains(@class,'view-module')]/h1[text()='Sign Up']"}
+  (Session info: chrome=78.0.3904.108)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
 System info: host: 'ARIEL-PC', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
-	at generic.BasePage.selectdropDownValue(BasePage.java:66)
-	at pages.SignUpPage.enterSignUpData(SignUpPage.java:72)
-	at tests.SignUpTest.fillSingUpWrongDay(SignUpTest.java:50)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\CYBERS~1\AppData\Local\Temp\scoped_dir9224_252703723}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64506}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 591437afe831ab09c3651c8563263974
+*** Element info: {Using=xpath, value=//section[contains(@class,'view-module')]/h1[text()='Sign Up']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at pages.SignUpPage.getlblSingUp(SignUpPage.java:63)
+	at tests.SignUpTest.fillSingUpInvalidName(SignUpTest.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -97,22 +117,154 @@ Driver info: driver.version: unknown
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillSingUpWrongDay -->
-        <test-method status="PASS" signature="fillSingUpInvalidEmail()[pri:4, instance:tests.SignUpTest@754ba872]" name="fillSingUpInvalidEmail" duration-ms="1441" started-at="2019-11-29T00:29:10Z" finished-at="2019-11-29T00:29:12Z">
+        </test-method> <!-- fillSingUpInvalidName -->
+        <test-method status="FAIL" signature="fillSingUpInvalidEmail()[pri:4, instance:tests.SignUpTest@754ba872]" name="fillSingUpInvalidEmail" duration-ms="20040" started-at="2019-11-29T00:38:34Z" finished-at="2019-11-29T00:38:54Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#username_input"}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ARIEL-PC', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\CYBERS~1\AppData\Local\Temp\scoped_dir9224_252703723}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64506}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 591437afe831ab09c3651c8563263974
+*** Element info: {Using=id, value=username_input}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#username_input"}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ARIEL-PC', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\CYBERS~1\AppData\Local\Temp\scoped_dir9224_252703723}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64506}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 591437afe831ab09c3651c8563263974
+*** Element info: {Using=id, value=username_input}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:462)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at pages.SignUpPage.getUserName(SignUpPage.java:18)
+	at pages.SignUpPage.clearSignUpData(SignUpPage.java:79)
+	at tests.SignUpTest.fillSingUpInvalidEmail(SignUpTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillSingUpInvalidEmail -->
-        <test-method status="PASS" signature="fillSingUpSuccessful()[pri:5, instance:tests.SignUpTest@754ba872]" name="fillSingUpSuccessful" duration-ms="1047" started-at="2019-11-29T00:29:12Z" finished-at="2019-11-29T00:29:13Z">
+        <test-method status="FAIL" signature="fillSingUpSuccessful()[pri:5, instance:tests.SignUpTest@754ba872]" name="fillSingUpSuccessful" duration-ms="20041" started-at="2019-11-29T00:38:54Z" finished-at="2019-11-29T00:39:14Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#username_input"}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ARIEL-PC', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\CYBERS~1\AppData\Local\Temp\scoped_dir9224_252703723}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64506}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 591437afe831ab09c3651c8563263974
+*** Element info: {Using=id, value=username_input}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#username_input"}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ARIEL-PC', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\CYBERS~1\AppData\Local\Temp\scoped_dir9224_252703723}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64506}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 591437afe831ab09c3651c8563263974
+*** Element info: {Using=id, value=username_input}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:462)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at pages.SignUpPage.getUserName(SignUpPage.java:18)
+	at pages.SignUpPage.clearSignUpData(SignUpPage.java:79)
+	at tests.SignUpTest.fillSingUpSuccessful(SignUpTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillSingUpSuccessful -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.SignUpTest@754ba872]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-11-29T00:29:13Z" finished-at="2019-11-29T00:29:13Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.SignUpTest@754ba872]" name="afterClass" is-config="true" duration-ms="713" started-at="2019-11-29T00:39:14Z" finished-at="2019-11-29T00:39:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- tests.SignUpTest -->
       <class name="tests.ProfileTest">
-        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:tests.ProfileTest@146ba0ac]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-11-29T00:29:13Z" finished-at="2019-11-29T00:29:13Z">
+        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:tests.ProfileTest@146ba0ac]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-11-29T00:39:15Z" finished-at="2019-11-29T00:39:15Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -147,25 +299,25 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="ValidateProfileData()[pri:0, instance:tests.ProfileTest@146ba0ac]" name="ValidateProfileData" duration-ms="1" started-at="2019-11-29T00:29:13Z" finished-at="2019-11-29T00:29:13Z">
+        <test-method status="SKIP" signature="ValidateProfileData()[pri:0, instance:tests.ProfileTest@146ba0ac]" name="ValidateProfileData" duration-ms="1" started-at="2019-11-29T00:39:15Z" finished-at="2019-11-29T00:39:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateProfileData -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:tests.ProfileTest@146ba0ac]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-11-29T00:29:13Z" finished-at="2019-11-29T00:29:13Z">
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:tests.ProfileTest@146ba0ac]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-11-29T00:39:15Z" finished-at="2019-11-29T00:39:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- tests.ProfileTest -->
       <class name="tests.DetailTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.DetailTest@4dfa3a9d]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-11-29T00:29:13Z" finished-at="2019-11-29T00:29:13Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.DetailTest@4dfa3a9d]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-11-29T00:39:15Z" finished-at="2019-11-29T00:39:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="f()[pri:0, instance:tests.DetailTest@4dfa3a9d]" name="f" duration-ms="2" started-at="2019-11-29T00:29:13Z" finished-at="2019-11-29T00:29:13Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:tests.DetailTest@4dfa3a9d]" name="f" duration-ms="1" started-at="2019-11-29T00:39:15Z" finished-at="2019-11-29T00:39:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.DetailTest@4dfa3a9d]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-11-29T00:29:13Z" finished-at="2019-11-29T00:29:13Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.DetailTest@4dfa3a9d]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-11-29T00:39:15Z" finished-at="2019-11-29T00:39:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

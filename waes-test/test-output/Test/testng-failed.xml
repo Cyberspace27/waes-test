@@ -18,8 +18,10 @@
       <class name="tests.SignUpTest">
         <methods>
           <include name="beforeClass"/>
-          <include name="fillSingUpWrongDay"/>
+          <include name="fillSingUpInvalidEmail"/>
+          <include name="fillSingUpSuccessful"/>
           <include name="beforeTests"/>
+          <include name="fillSingUpInvalidName"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- tests.SignUpTest -->

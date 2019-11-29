@@ -1,95 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="2" passed="0">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3068" started-at="2019-11-29T06:16:55Z" finished-at="2019-11-29T06:16:58Z">
+  <suite name="Default suite" duration-ms="17969" started-at="2019-11-29T06:19:43Z" finished-at="2019-11-29T06:20:01Z">
     <groups>
       <group name="login">
-        <method signature="LoginTest.signInFailed()[pri:0, instance:tests.LoginTest@5442a311]" name="signInFailed" class="tests.LoginTest"/>
-        <method signature="LoginTest.signInSuccess()[pri:0, instance:tests.LoginTest@5442a311]" name="signInSuccess" class="tests.LoginTest"/>
+        <method signature="LoginTest.signInFailed()[pri:0, instance:tests.LoginTest@548e7350]" name="signInFailed" class="tests.LoginTest"/>
+        <method signature="LoginTest.signInSuccess()[pri:0, instance:tests.LoginTest@548e7350]" name="signInSuccess" class="tests.LoginTest"/>
       </group> <!-- login -->
     </groups>
-    <test name="Default test" duration-ms="3068" started-at="2019-11-29T06:16:55Z" finished-at="2019-11-29T06:16:58Z">
+    <test name="Default test" duration-ms="17969" started-at="2019-11-29T06:19:43Z" finished-at="2019-11-29T06:20:01Z">
       <class name="tests.LoginTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.LoginTest@5442a311]" name="beforeClass" is-config="true" duration-ms="17" started-at="2019-11-29T00:16:55Z" finished-at="2019-11-29T00:16:55Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.LoginTest@548e7350]" name="beforeClass" is-config="true" duration-ms="10505" started-at="2019-11-29T00:19:43Z" finished-at="2019-11-29T00:19:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="signInFailed()[pri:0, instance:tests.LoginTest@5442a311]" name="signInFailed" duration-ms="10" started-at="2019-11-29T00:16:55Z" description="logIn with invalid data" finished-at="2019-11-29T00:16:55Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at generic.BasePage.clickElementByLocator(BasePage.java:44)
-	at pages.LoginPage.goToLogin(LoginPage.java:83)
-	at tests.LoginTest.signInFailed(LoginTest.java:24)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="beforeC()[pri:0, instance:tests.LoginTest@548e7350]" name="beforeC" is-config="true" duration-ms="1" started-at="2019-11-29T00:19:54Z" finished-at="2019-11-29T00:19:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeC -->
+        <test-method status="PASS" signature="signInFailed()[pri:0, instance:tests.LoginTest@548e7350]" name="signInFailed" duration-ms="3934" started-at="2019-11-29T00:19:54Z" description="logIn with invalid data" finished-at="2019-11-29T00:19:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInFailed -->
-        <test-method status="FAIL" signature="signInSuccess()[pri:0, instance:tests.LoginTest@5442a311]" name="signInSuccess" duration-ms="3002" started-at="2019-11-29T00:16:55Z" description="logIn with correct data" finished-at="2019-11-29T00:16:58Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at pages.LoginPage.getUserName(LoginPage.java:15)
-	at pages.LoginPage.typeUserPassword(LoginPage.java:62)
-	at tests.LoginTest.signInSuccess(LoginTest.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="signInSuccess()[pri:0, instance:tests.LoginTest@548e7350]" name="signInSuccess" duration-ms="3503" started-at="2019-11-29T00:19:58Z" description="logIn with correct data" finished-at="2019-11-29T00:20:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInSuccess -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.LoginTest@5442a311]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-11-29T00:16:58Z" finished-at="2019-11-29T00:16:58Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.LoginTest@548e7350]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-11-29T00:20:01Z" finished-at="2019-11-29T00:20:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
